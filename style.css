@@ -1,0 +1,60 @@
+/* ==UserStyle==
+@name           okky dark mode
+@namespace      github.com/dohyeongk/okky-v2.0-dark-theme
+@version        1.0.0
+@description    dark theme for okky v2.0
+@author         dohyeong
+==/UserStyle== */
+@-moz-document url-prefix("https://okky.kr") {
+    /* Reduce padding in list */
+    .py-4 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /* Increase font size for reply */
+    .text-sm {
+        font-size: 1rem;
+    }
+    .gap-x-5 > .text-sm {
+        font-size: 0.8rem;
+    }
+
+    /* Dark mode */
+    body,
+    .bg-white {
+        background-color: #121212;
+    }
+    .bg-gray-100,
+    .bg-okky-24 {
+        background-color: #323232;
+    }
+    .text-black,
+    .text-gray-900,
+    .text-gray-800,
+    .hover\:text-gray-700:hover,
+    .text-okky-9 {
+        color: #FFFFFFdd;
+    }
+    .text-gray-500,
+    .text-gray-600,
+    .text-gray-700,
+    .text-okky-12,
+    .text-okky-22,
+    .text-okky-13 {
+        color: #FFFFFF99;
+    }
+    .hover\:text-black:hover {
+        color: #FFFFFF;
+    }
+    .text-black.sm\:text-center,
+    .bg-blue-50 ~ .text-black,
+    textarea ~ p > .text-gray-500 {
+        color: #000000;
+    }
+    form {
+        color: #000000;
+    }
+    
+    .remirror-theme { --rmr-color-text: #FFFFFFdd; }
+}
