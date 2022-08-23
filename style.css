@@ -47,13 +47,18 @@
     .hover\:text-black:hover {
         color: #FFFFFF;
     }
+    
+    /* Exceptions for editor */
     .text-black.sm\:text-center,
     .bg-blue-50 ~ .text-black,
     textarea ~ p > .text-gray-500 {
         color: #000000;
     }
-    form {
-        color: #000000;
+    form > div > div:first-child {
+        color: rgb(107 114 128/var(--tw-text-opacity));
+    }
+    form > div > div:first-child .bg-white {
+        background-color: rgb(255 255 255/var(--tw-bg-opacity));
     }
     
     .remirror-theme { --rmr-color-text: #FFFFFFdd; }
