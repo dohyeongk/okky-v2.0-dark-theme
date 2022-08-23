@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           okky dark mode
 @namespace      github.com/dohyeongk/okky-v2.0-dark-theme
-@version        1.0.0
+@version        20220822.1
 @description    dark theme for okky v2.0
 @author         dohyeong
 ==/UserStyle== */
@@ -54,10 +54,10 @@
     textarea ~ p > .text-gray-500 {
         color: #000000;
     }
-    form > div > div:first-child {
+    form > div > div:first-child, form > div > label ~ div {
         color: rgb(107 114 128/var(--tw-text-opacity));
     }
-    form > div > div:first-child .bg-white {
+    form > div > div:first-child .bg-white, form > div > label ~ div .bg-white {
         background-color: rgb(255 255 255/var(--tw-bg-opacity));
     }
     
